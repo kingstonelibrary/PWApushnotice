@@ -1,0 +1,23 @@
+{
+  "name": "push",
+  "version": "1.0.0",
+  "main": "service-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "TOMIYASU <fujiman8@gmail.com> (http://pengpeng.chips.jp)",
+  "license": "ISC",
+  "dependencies": {
+    "web-push": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingstonelibrary/PWA_push.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kingstonelibrary/PWA_push/issues"
+  },
+  "homepage": "https://github.com/kingstonelibrary/PWA_push#readme",
+  "description": ""
+}
