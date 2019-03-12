@@ -24,7 +24,7 @@ var db = firebase.firestore();
 
 const GCM_API_KEY = 'AAAA3-MbfN0:APA91bGtlCrxRI-_F6tEZOAW-ebhX5_39F3DiAnwK7wRlsL9dd7bWylNtc3AhzQmaNVVJnLcX2D1l7wVEGjyk1yn3gfKQwW57uJ7Qq7DQzfUJ67zeSeK5cjuEBBRK9SZRZTuDTyzrxUF';
 push.setGCMAPIKey(GCM_API_KEY);
-let data = {
+let data = {                // we-push用データオブジェクト
     'endpoint': '',
     keys: {
         'auth': '',
@@ -53,7 +53,7 @@ if ('serviceWorker' in navigator) {
             data.keys.auth = auth.value;
             data.keys.p256dh = key.value;
             // データ追加
-            db.collection("tokens").add({
+            db.collection("permissions").add({
               endpoint: subscription.endpoint,
               key: key.value,
               auth: auth.value
